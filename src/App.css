@@ -1,0 +1,258 @@
+/* General body styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(45deg, rgb(8, 53, 145) 0%, rgb(0, 255, 255) 100%); 
+  min-height: 94vh;
+}
+
+.main-container {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.chat-container {
+  width: 550px;
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  height: 650px;
+  overflow: hidden; 
+}
+
+.commands-list-container {
+  width: 200px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.commands-list-container > h3 {
+  text-align: center;
+}
+
+.commands-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.command-item {
+  padding: 10px;
+  margin: 5px 0;
+  background-color: #f1f1f1;
+  color: #007bff;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+.command-item:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.command-item.active {
+  background-color: #007bff;
+  color: #fff;
+}
+ 
+.chat-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.chat-header {
+  background-color: #007bff;
+  color: #fff;
+  padding: 5px;
+  text-align: center;
+}
+
+.chat-messages {
+  padding: 10px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  scrollbar-color: #007bff #f9f9f9;
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #ddd;
+  max-height: 485px;
+}
+
+.chat-message {
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 10px;
+  word-wrap: break-word;
+  max-width: 70%;
+}
+
+.incoming-message {
+  background-color: #919191;
+  text-align: left;
+  margin-right: auto;
+  align-self: flex-start;
+}
+
+.outgoing-message {
+  background-color: #007bff;
+  color: white;
+  text-align: right;
+  margin-left: auto;
+  align-self: flex-end;
+}
+
+.chat-input {
+  display: flex;
+  padding: 10px;
+  background-color: #f1f1f1;
+  border-top: 1px solid #ddd;
+  flex-shrink: 0; 
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.chat-input button {
+  margin-left: 10px;
+  padding: 10px 15px;
+  background-color: #007bff;
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.chat-input button:hover {
+  background-color: #0056b3;
+}
+
+.right-side-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.group-creation-container {
+  width: 200px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.group-creation-container h3 {
+  margin: 0;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.group-creation-container input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.group-creation-container button {
+  padding: 10px 15px;
+  background-color: #007bff;
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.group-creation-container button:hover {
+  background-color: #0056b3;
+}
+
+/* Groups list container styling */
+.groups-list-container {
+  width: 200px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.groups-list-container h3 {
+  margin: 0;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.groups-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.groups-list li {
+  padding: 10px;
+  margin: 5px 0;
+  background-color: #e6e3e3;
+  color: #007bff;
+  border-radius: 5px;
+  text-align: center;
+}
+
+h3 {
+  color: #007bff;
+}
+
+.textfield, .group-name-input {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+.team-input-container {
+  width: 200px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px; 
+}
+
+.team-input-container h3 {
+  margin: 0;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #007bff;
+}
+
+.team-name-input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.team-input-container > .team-name-input {
+  background-color: #f1f1f1;
+  color: black;
+}

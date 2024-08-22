@@ -1,0 +1,13 @@
+export const HELLO_COMMAND: string = '!hello';
+export const ACK_COMMAND: string = '!ack';
+export const BYE_COMMAND: string = '!bye';
+export const BYEBYE_COMMAND: string = '!byebye';
+export const ACKG_COMMAND: string = '!ackg';
+export const INVITE_COMMAND: string = '!invite';
+export const GROUP_COMMAND: string = '!group';
+export const UPDATE_COMMAND: string = '!update';
+export const EMPTY_STRING: string = '';
+export const ALERT_GROUP_NAME: string = 'Please enter a group name';
+export const GROUP_NAME: string = 'Group name';
+export const TYPE_MESSAGE: string = 'Type a message...';
+export const WEB_SOCKET_URL: string = 'ws://localhost:8080/ws';
